@@ -17,7 +17,7 @@
 <hr/>
 
 # Technologies used:
--[x] **React Js**
+-[x] React Js
 -[x] **JQuery**
 -[x] **Google**
 -[x] **My Innovative Mind 😉**
