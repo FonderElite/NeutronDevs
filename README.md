@@ -21,3 +21,9 @@
 - [x] **JQuery**
 - [x] **Google**
 - [x] **My Innovative Mind 😉**
+<hr/>
+
+# What is Neutron Nation?
+>Neutron Nation is a discord group made by WarenGonzaga, a full stack developer and a freelancer.
+>Its a discord group in which individuals such as beginners, intemediates and proffesionals discuss and learn from one another
+</hr>
