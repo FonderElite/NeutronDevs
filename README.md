@@ -14,3 +14,10 @@
     <li>WarenGonzaga</li>
     <li>MorScire</li>
  </ul>
+<hr/>
+
+# Technologies used:
+-[x] **React Js**
+-[x] **JQuery**
+-[x] **Google**
+-[x] **My Innovative Mind 😉**
