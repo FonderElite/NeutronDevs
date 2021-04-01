@@ -9,15 +9,15 @@
 # People
 **People Included in the List:**
 <ul>
-  <li>Anikin Abales Luke</li>
-    <li>ItsJeffersonLi</li>
-    <li>WarenGonzaga</li>
-    <li>MorScire</li>
+  <li>Anikin Abales Luke(Python Dev)</li>
+    <li>ItsJeffersonLi(CyberSecurity Proffesional)</li>
+    <li>WarenGonzaga(FullStack Developer)</li>
+    <li>MorScire(Pentester)</li>
  </ul>
 <hr/>
 
 # Technologies used:
--[x] React Js
--[x] **JQuery**
--[x] **Google**
--[x] **My Innovative Mind 😉**
+- [x] **React Js**
+- [x] **JQuery**
+- [x] **Google**
+- [x] **My Innovative Mind 😉**
