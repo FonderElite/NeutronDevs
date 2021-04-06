@@ -10,6 +10,9 @@ $thick-font:600;
 $void: none;
 $visible: 'block';
 $slight-round-border: 10px;
+$p-font: 2.5vh;
+$shadow: 0px 2px 1px 1px grey;
+$mid-speed: 0.5s;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @media screen and (min-width: 800px) {
 #h3-title{
@@ -348,6 +351,12 @@ p {
   border-radius: 10px;
   width: 95%;
   text-align: center;
+  font-size: $p-font;
+  transition: $mid-speed;
+}
+.discordp:hover{
+    transition:$mid-speed;
+    box-shadow: $shadow;
 }
 #discordp1{
   position: $constant;
