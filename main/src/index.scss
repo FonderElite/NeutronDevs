@@ -382,8 +382,14 @@ left: 35%;
   top: 80%;
 left: 36%;
 }
-a{
-  color: white;
+  @for $x from 1 through 20 {
+  a#{$x} {
+    font-size: 0px + $x;
+  }
+  a{
+       color: white;
+  }
+
 }
 
 /*End of side Main-Info*/
