@@ -5,10 +5,21 @@ Variables
 */
 $constant: absolute;
 $invisible:  none;
+$best-font:'poppins';
+$thick-font:600;
+$void: none;
+$visible: 'block';
+$slight-round-border: 10px;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@media screen and (min-width: 800px) {
 #h3-title{
-  font-family: 'poppins';
-  font-weight: 600;
+  font-family: $best-font;
+  font-weight: $thick-font;
+  @if $thick-font == '600'{
+$thick-font: 600 + 50;
+  }@else{
+      $thick-font: 650 - 50;
+  }
 }
 :root {
   /* dark shades of primary color*/
@@ -69,6 +80,7 @@ body {
   color: var(--clr-grey-9);
   line-height: 1.5;
   font-size: 0.875rem;
+ 
   
   
 }
@@ -103,7 +115,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 800px) {
+
   #react-svg{
     position: $constant;
     width: 18%;
@@ -137,11 +149,12 @@ p {
     height: 25%;
     background:rgb(3, 3, 3);
     /*border: 1px solid rgb(59, 58, 58);*/
-    border: 1px solid grey;
-    position: absolute;
+    border: $void;
+    position: $constant;
     /*box-shadow: 0px 0px 10px 5px rgb(32, 32, 32);*/
     transition: 0.5s;
-    border-radius: 0px;
+    border-radius:$slight-round-border;
+
   }
   #box-svg:hover{
     box-shadow: 0px 0px 0px 0px rgb(32, 32, 32);
@@ -150,7 +163,7 @@ p {
   /*Text Box*/
   #text-box-one{
     background-color: rgb(32, 32, 32);
-    position: absolute;
+    position: $constant;
     width: 32%;
     height: 105%;
     left: 0.1%;
@@ -160,20 +173,20 @@ p {
   }
 #txt-title{
   font-size: 4.5vh;
-  position: absolute;
+  position: $constant;
   left: 30%;
   top: 5%;
 }
 #warenimg{
-  position: absolute;
+  position: $constant;
   width: 20%;
   height: 12%;
   border-radius: 5%;
 }
 #who{
-  font-family:'poppins';
+  font-family:$best-font;
   background-color: rgb(20, 19, 19);
-  position: absolute;
+  position:$constant;
   top: 20%;
   border-radius: 5px;
   width: 90%;
@@ -183,21 +196,21 @@ p {
 }
 #opensource-h1{
   font-size: 4.5vh;
-  position: absolute;
+  position: $constant;
   left: 30%;
   top: 62%;
 }
 #githubimg{
-  position: absolute;
+  position: $constant;
   width: 20%;
   height: 12%;
   border-radius: 10px;
   top: 58%;
 }
 #opensource{
-  font-family:'poppins';
+  font-family:$best-font;
   background-color: rgb(20, 19, 19);
-  position: absolute;
+  position: $constant;
   top: 74%;
   border-radius: 5px;
   width: 90%;
@@ -218,47 +231,50 @@ p {
   padding: 20px;
   border: 1px solid rgb(26, 25, 25);
   background: rgb(29, 28, 28);
-  position: absolute;
+  position: $constant;
   top: 0%;
 }
 #html{
   left: 33%;
-  position: absolute;
+  position:$constant;
   top: 3%;
 }
 #css{
   left: 37%;
-  position: absolute;
+  position:$constant;
   top: 1%;
   width: 9%;
   height: 12%;
 }
 #js{
   left: 43%;
-  position: absolute;
+  position: $constant;
   top: 1.8%;
   width: 9%;
   height: 11%;
 }
 #react{
   left: 48.6%;
-  position: absolute;
+  position:$constant;
   top: 1%;
   width: 9%;
   height: 11%;
 }
 #vm{
   left: 62%;
-  position: absolute;
+  position: $constant;
   top: 3%;
 }
 #scss{
   left: 56%;
-  position: absolute;
+  position: $constant;
   top: 3%;
 }
 #vbox{
-  display: none;
+  display: $void;
+  @if display != $void{
+      display: $invisible;
+  }
 }
 /*end of top skills*/
 
@@ -268,7 +284,7 @@ p {
   background:rgb(20, 20, 20);
 }
 #group{
-  position: absolute;
+  position:$constant;
   left: 68%;
   top:0%;
   background: rgb(29, 28, 28);
@@ -285,14 +301,14 @@ p {
   color: white;
 }
 #discord{
-  position: absolute;
+  position: $constant;
   height: 10%;
   width: 5%;
   left: 70%;
   top: 2%;
 }
 #first{
-  position: absolute;
+  position:$constant;
   left: 68%;
     background:rgb(20, 20, 20);
     width: 31%;
@@ -301,7 +317,7 @@ p {
     border-radius: 10px;
 }
 #second{
-    position: absolute;
+    position: $constant;
       border-radius: 10px;
   left: 68%;
     background:rgb(20, 20, 20);
@@ -310,7 +326,7 @@ p {
     top: 51.5%;
 }
 #third{
-    position: absolute;
+    position: $constant;
       border-radius: 10px;
   left: 68%;
     background:rgb(20, 20, 20);
@@ -325,7 +341,7 @@ p {
   color: white;
 }
 .discordp{
-  font-family:'poppins';
+  font-family:$best-font;
   color: grey;
   background: black;
   border:none;
@@ -334,16 +350,16 @@ p {
   text-align: center;
 }
 #discordp1{
-  position: absolute;
+  position: $constant;
   left: 2%;
 }
 #discordp2{
-  position: absolute;
+  position: $constant;
   top: 20%;
   left: 2%;
 }
 #discordp3{
-  position: absolute;
+  position: $constant;
   top: 40%;
   left: 2%;
 }
@@ -352,7 +368,7 @@ p {
  color: white;
  background:#4CAF50;
  border: none;
- position: absolute;
+ position:$constant;
 }
 #discordl1{
 top: 80%;
@@ -377,7 +393,7 @@ a{
   .glitch {
     color: white;
     font-size: 10vh;
-    position: absolute;
+    position: $constant;
     width: 20%;
 top: 15%;
 left: 35%;
@@ -451,7 +467,7 @@ left: 35%;
   }
   .glitch::after {
     content: attr(data-text);
-    position: absolute;
+    position:$constant;
     left: 2px;
     text-shadow: -1px 0 red;
     top: 0;
@@ -528,7 +544,7 @@ left: 35%;
   }
   .glitch::before {
     content: attr(data-text);
-    position: absolute;
+    position: $constant;
     left: -2px;
     text-shadow: 1px 0 blue;
     top: 0;
@@ -566,7 +582,7 @@ left: 35%;
   }
  h2{
     color: white;
-    position: absolute;
+    position:$constant;
     left: 44%;
     top: 35%;
     letter-spacing: 1vh;
